@@ -1,6 +1,5 @@
 // Code SimpleComponent Here
 import React, { Component } from 'react';
-import SimplerComponent from './SimplerComponent';
 
 class SimpleComponent extends Component {
 
@@ -20,9 +19,8 @@ class SimpleComponent extends Component {
 
     render() {
         return (
-            <div>
-                <h1 onClick={this.handleClick}>I am <em>{ this.state.mood }</em> today </h1>
-            </div>
+            <div onClick={this.handleClick}><em>{ this.state.mood }</em></div>
+
         )
             
     }
